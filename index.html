@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <title>Manager</title>
+<link rel="stylesheet" href="m.css">
+<link rel="icon" href="kopi.png">
+
+  </head>
+  <body>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    -->
+    <header>
+    <nav class="navbar navbar-dark bg-dark">
+      <img src="kopi.png" width="50px">
+      <div class="ext" id="options3">
+        <button onclick="exit()">Keluar &ensp;<svg style="margin-bottom: 2%;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+        </svg></button>
+        </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shop</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+  </header>
+  <div class="container" id="options1">
+    <h1>Login</h1>
+      <form name="logins">
+          <label>Username</label><br>
+          <input type="text" name="username"><br>
+          <label>Password</label><br>
+          <input type="password" name="password"><br>
+      </form>
+      <button class="b" onclick="login()">Log in</button>
+  </div>     
+  <div id="options2" style="display: none;">
+  <div class="row">
+    <div class="col-3">
+      <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true" style="color: white;">Manager Daffa</a>
+        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"style="color: white;" onclick="pm()">Pemasukan</a>
+        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false"style="color: white;">Menambahkan Menu <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+        </svg></a>
+        <br>
+        <table class="nt">
+          <tr>
+            <th>Menu cafe</th>
+            <th>Harga</th>
+          </tr>
+          <tr>
+            <td>caffe latte</td>
+            <td>Rp.20000-,</td>
+          </tr>
+          <tr>
+            <td>cappucino</td>
+            <td>Rp.25000-,</td>
+          </tr>
+          <tr>
+            <td>Mochacino</td>
+            <td>Rp.25000-,</td>
+          </tr>
+          <tr>
+            <td>Butter scotch latte</td>
+            <td>Rp.25000-,</td>
+          </tr>
+          <tr>
+            <td>caramel latte</td>
+            <td>Rp.25000-,</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="col-9">
+      <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+           <table class="c">
+             <tr><td><font size="10"><b>Selamat Datang Manajer daffa</b></font></td></tr>
+           </table>
+        </div>
+        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+          <table class="c1" border="1">
+            <tr>
+              <th>Nama Makanan/minuman</th>
+              <th>jumlah</th>
+              <th>Uang masuk</th>
+            </tr>
+            <tr>
+              <td colspan="2">total</td>
+              <td><div id="ttl"></div></td>
+            </tr>
+          </table>
+          <div class="ms" id="options4" style="display: none;">
+            <form name="p">
+            <h2>Masukan Pemasukan</h2>
+            <input type="text" id="pm1" name="pm1" placeholder="masukan nama menu"><br>
+            <input type="number" name="pm2" id="pm2" placeholder="masukan jumlah"><br>
+            <input type="number" name="pm3" id="pm3" placeholder="masukan jumlah uang masuk"><br>
+            <button type="button" class="btn btn-light" onclick="pemasukan()">Tambahkan &ensp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg></button>
+          </form>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+          <table class="c2">
+           <tr>
+             <td>Masukan nama Makanan/minuman</td>
+             <td><input type="text" name="nama" id="nama" style="background-color: rgba(255, 255, 255, 0.514);color: black; width: 100%;"></td>
+           </tr>
+           <br>
+           <tr>
+             <td>Masukan Harga</td>
+             <td><input type="number" name="harga" id="harga" style="background-color: rgba(255, 255, 255, 0.514);color: black; width: 100%;"></td>
+           </tr>
+          </table>
+          <br>
+          <button type="button" class="btn btn-light" style="margin-left: 50%;" onclick="tambah()">Tambahkan &ensp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+          </svg></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="m.js"></script>
+  </body>
+</html>
